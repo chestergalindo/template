@@ -1,3 +1,5 @@
+@import "cssreset";
+@import "colors";
 
 .App-logo {
   height: 40vmin;
@@ -35,7 +37,7 @@
 }
 
 button {
-  background-color: #282c;
+  background-color: $color-secondary;
   font-size: calc(10px + 2vmin);
   & p {
     color: white;
