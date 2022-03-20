@@ -1,3 +1,5 @@
+import './App.css';
+
 export const App = () => {
-  return <> hello world </>;
+  return <p> hello world </p>;
 };
