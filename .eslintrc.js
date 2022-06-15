@@ -5,7 +5,7 @@ module.exports = {
 	},
 	'extends': [
 		'eslint:recommended',
-		// 'plugin:react/recommended',
+		'eslint-config-prettier',
 		'plugin:@typescript-eslint/recommended'
 	],
 	'parser': '@typescript-eslint/parser',
@@ -21,6 +21,11 @@ module.exports = {
 		'@typescript-eslint'
 	],
 	'rules': {
+		'valid-typeof': 'error',
+		"no-unsafe-negation": 'error',
+		'no-unused-vars': 'error',
+		'no-unexpected-multiline': 'error',
+		"no-undef": 'error',
 		'indent': [
 			'error',
 			'space'
