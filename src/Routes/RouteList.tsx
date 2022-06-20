@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Home } from '../src/page/Home';
-import { Header } from './components/Header';
+import { Home } from '../page/Home';
+import { Header } from '../components/Header';
 
 export const RouteList = () => {
   return (
