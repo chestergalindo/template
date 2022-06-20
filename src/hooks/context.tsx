@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { createContext } from 'react';
 import { useQuery } from 'react-query';
 import { callApi } from '../utils/callApi';

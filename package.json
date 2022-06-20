@@ -3,8 +3,8 @@
   "private": true,
   "version": "0.7.0",
   "scripts": {
-    "lint": "tslint --fix './src/**/*.tsx'",
-    "format": "prettier --write 'src/**/*.tsx'",
+    "lint": "eslint --ignore-pattern .gitignore --fix './src/**/*.(tsx|ts|js|jsx|json)'",
+    "format": "prettier --write 'src/**/*.(tsx|ts|js|jsx|json)'",
     "predev": "npm run lint && npm run format",
     "dev": "vite",
     "build": "tsc && vite build",
@@ -46,7 +46,6 @@
     "react-icons": "4.4.0",
     "react-portal": "4.2.2",
     "react-query": "3.39.1",
-    "tslint": "6.1.3",
     "tslint-config-prettier": "1.18.0",
     "tslint-plugin-prettier": "2.3.0",
     "tslint-react-a11y": "1.1.0",
