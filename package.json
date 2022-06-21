@@ -3,12 +3,14 @@
   "private": true,
   "version": "0.7.0",
   "scripts": {
+    "test": "jest",
     "lint": "eslint --ignore-pattern .gitignore --ext .js,.ts,.tsx './src'",
     "prettier": "prettier  --ignore-pattern .gitignore --ext .js,.ts,.tsx,.json './src'",
     "check-types": "tsc",
     "check-format": " npm run prettier -- --list-different",
     "format": "npm run prettier -- --write",
-    "validate": "npm-run-all --parallel check-types check-format lint",
+    "validate": "npm-run-all --parallel check-types check-format lint test",
+    "setup": "npm install && npm run validate",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
@@ -26,6 +28,7 @@
     "@babel/preset-env": "7.18.2",
     "@babel/preset-react": "7.17.12",
     "@babel/preset-typescript": "7.17.12",
+    "@types/jest": "28.1.2",
     "@types/react": "18.0.12",
     "@types/react-dom": "18.0.5",
     "@types/react-helmet": "6.1.5",
@@ -41,9 +44,10 @@
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-jsx-a11y": "6.5.1",
     "eslint-plugin-prettier": "4.0.0",
-    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react": "7.30.0",
     "eslint-plugin-react-hooks": "4.5.0",
-    "husky": "^8.0.0",
+    "husky": "8.0.0",
+    "jest": "28.1.1",
     "lint-staged": "13.0.2",
     "lodash": "4.17.21",
     "npm-run-all": "4.1.5",
@@ -55,20 +59,12 @@
     "react-icons": "4.4.0",
     "react-portal": "4.2.2",
     "react-query": "3.39.1",
+    "ts-jest": "28.0.5",
     "tslint-config-prettier": "1.18.0",
     "tslint-plugin-prettier": "2.3.0",
     "tslint-react-a11y": "1.1.0",
     "tslint-react-hooks": "2.2.2",
     "typescript": "4.7.3",
     "vite": "2.9.12"
-  },
-  "babel": {
-    "env": {
-      "test": {
-        "presets": [
-          "react-app"
-        ]
-      }
-    }
   }
 }
