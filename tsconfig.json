@@ -19,7 +19,7 @@
     "sourceMap": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
-    "noUnusedLocals": true,
+    "noUnusedLocals": false,
     "removeComments": true,
     "strictNullChecks": true,
     "suppressImplicitAnyIndexErrors": true,
