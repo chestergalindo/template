@@ -1,7 +1,7 @@
 {
   "name": "template",
   "private": true,
-  "version": "0.7.1",
+  "version": "0.7.2",
   "scripts": {
     "test": "jest",
     "lint": "eslint --ignore-pattern .gitignore --ext .js,.ts,.tsx './src'",
