@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 import { createContext } from 'react';
 import { useQuery } from 'react-query';
-import { callApi } from '../utils/callApi';
+import { callApi } from '../../utils/callApi';
 import { defaultValues } from './defaultValues';
 
 export const ContextMenu = createContext(defaultValues);
