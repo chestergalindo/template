@@ -1,9 +1,8 @@
 import { QueryClient, QueryClientProvider } from 'react-query';
-import { RouteList } from '../../Routes/RouteList';
-import { AppProvider } from './context';
+import { RouteList } from '../../routes/RouteList';
+import { AppProvider } from '../../storage/artist/context';
 
-export const App = () =>
-{
+export const App = () => {
   const queryClient = new QueryClient();
   return (
     <QueryClientProvider client={queryClient}>
