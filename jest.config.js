@@ -1,9 +1,14 @@
 /* eslint-disable no-undef */
-// eslint-disable-next-line no-undef
 module.exports = {
-  testEnvironment: 'jest-environment-jsdom',
-  moduleNameMapper: {
-    '\\module\\.css$': 'identity-obj-proxy',
-    '\\.css$': require.resolve('./src/utils/config/test/mock-test-css'),
+  ...require('./test/jest-common'),
+  collectCoverageFromm: ['**/src/**/*.js'],
+  coverageThresHold: {
+    global: {
+      statement: 100,
+      branches: 100,
+      functions: 100,
+      lines: 100
+    }
   },
+  projects: ['./test/jest-client.js', './test/jest-lint.js']
 };
